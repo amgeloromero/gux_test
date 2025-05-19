@@ -8,13 +8,13 @@
 	},
 	"item": [
 		{
-			"name": "Register",
+			"name": "REGISTER",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"angelo\",\r\n  \"email\": \"tu@email.com\",\r\n  \"role\":\"admin\",\r\n  \"password\": \"q1w2e3r4\",\r\n  \"password_confirmation\": \"q1w2e3r4\"\r\n}",
+					"raw": "{\r\n  \"name\": \"angelo\",\r\n  \"email\": \"arpa@email.com\",\r\n  \"role\":\"admin\",\r\n  \"password\": \"q1w2e3r4\",\r\n  \"password_confirmation\": \"q1w2e3r4\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -40,13 +40,13 @@
 			"response": []
 		},
 		{
-			"name": "Login",
+			"name": "LOGIN",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"name\": \"angelo\",\r\n  \"email\": \"tu@email.com\",\r\n  \"role\":\"admin\",\r\n  \"password\": \"q1w2e3r4\",\r\n  \"password_confirmation\": \"q1w2e3r4\"\r\n}",
+					"raw": "{\r\n    \"email\": \"angelo.romero@email.com\",\r\n    \"password\": \"q1w2e3r4t5\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -72,7 +72,7 @@
 			"response": []
 		},
 		{
-			"name": "me",
+			"name": "ME",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -82,7 +82,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3MzYwOTc3LCJleHAiOjE3NDczNjQ1NzcsIm5iZiI6MTc0NzM2MDk3NywianRpIjoiclJkV09CUlVZVWJteksxdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Z_1Qhj57nauzZgyXA_ZgB88JIhwNcNfsRzAIdTm6zjs",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3NjE4NzAyLCJleHAiOjE3NDc2MjIzMDIsIm5iZiI6MTc0NzYxODcwMiwianRpIjoiRjMyS1pJcFBxazl1RFIzNiIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.IztK26JOLfzl5nHcVl6Y4IRQabPEmmRR5hTs17BccLo",
 							"type": "string"
 						}
 					]
@@ -117,14 +117,14 @@
 			"response": []
 		},
 		{
-			"name": "create TASK",
+			"name": "CREATE TASK",
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3MzYwOTc3LCJleHAiOjE3NDczNjQ1NzcsIm5iZiI6MTc0NzM2MDk3NywianRpIjoiclJkV09CUlVZVWJteksxdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Z_1Qhj57nauzZgyXA_ZgB88JIhwNcNfsRzAIdTm6zjs",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3NTQ0MDAyLCJleHAiOjE3NDc1NDc2MDIsIm5iZiI6MTc0NzU0NDAwMiwianRpIjoielYzYWVmWHFzMGtSRXlxMCIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.bDxoAGeoHKdMx8PBe06HN0J2HYLjSA8ILpGT_AtenNY",
 							"type": "string"
 						}
 					]
@@ -133,7 +133,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"titulo\": \"task 1\",\r\n    \"descripcion\": \"created api\",\r\n    \"estado\": \"1\",\r\n    \"user_id\": \"1\"\r\n}",
+					"raw": "{\r\n    \"titulo\": \"task dos \",\r\n    \"descripcion\": \"created api\",\r\n    \"estado\": \"1\",\r\n    \"user_id\": \"2\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -160,22 +160,25 @@
 		},
 		{
 			"name": "LIST TASK",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3MzYwOTc3LCJleHAiOjE3NDczNjQ1NzcsIm5iZiI6MTc0NzM2MDk3NywianRpIjoiclJkV09CUlVZVWJteksxdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Z_1Qhj57nauzZgyXA_ZgB88JIhwNcNfsRzAIdTm6zjs",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3NTUwMTM2LCJleHAiOjE3NDc1NTM3MzYsIm5iZiI6MTc0NzU1MDEzNiwianRpIjoiV2JKS2V2Q01kb0xmS2pLOSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0._YXmD-hyfGu5p7p8LR_3dkYfmuqqAzHntSnERYA_W9M",
 							"type": "string"
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"titulo\": \"task 1\",\r\n    \"descripcion\": \"created api\",\r\n    \"estado\": \"1\",\r\n    \"user_id\": \"1\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -183,7 +186,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8787/api/task",
+					"raw": "http://127.0.0.1:8787/api/tasks/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -194,7 +197,8 @@
 					"port": "8787",
 					"path": [
 						"api",
-						"task"
+						"tasks",
+						"2"
 					]
 				}
 			},
@@ -208,7 +212,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3MzYwOTc3LCJleHAiOjE3NDczNjQ1NzcsIm5iZiI6MTc0NzM2MDk3NywianRpIjoiclJkV09CUlVZVWJteksxdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Z_1Qhj57nauzZgyXA_ZgB88JIhwNcNfsRzAIdTm6zjs",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3NjExNTUzLCJleHAiOjE3NDc2MTUxNTMsIm5iZiI6MTc0NzYxMTU1MywianRpIjoiZ1BySk1wMEdkVHdmODdjZiIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.zNK_G8YYm0vJC0WYbhJz5k6qETFxZPgwYBbssMyc8RQ",
 							"type": "string"
 						}
 					]
@@ -217,7 +221,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"titulo\": \"task 1 edited\",\r\n    \"descripcion\": \"created api\",\r\n    \"estado\": \"1\",\r\n    \"user_id\": \"1\"\r\n}",
+					"raw": "{\r\n    \"titulo\": \"task 1 edited\",\r\n    \"descripcion\": \"created api\",\r\n    \"estado\": \"1\",\r\n    \"user_id\": \"2\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -225,7 +229,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8787/api/task/1",
+					"raw": "http://127.0.0.1:8787/api/task/6",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -237,7 +241,7 @@
 					"path": [
 						"api",
 						"task",
-						"1"
+						"6"
 					]
 				}
 			},
@@ -294,7 +298,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3MzYwOTc3LCJleHAiOjE3NDczNjQ1NzcsIm5iZiI6MTc0NzM2MDk3NywianRpIjoiclJkV09CUlVZVWJteksxdyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.Z_1Qhj57nauzZgyXA_ZgB88JIhwNcNfsRzAIdTm6zjs",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjg3ODcvYXBpL2xvZ2luIiwiaWF0IjoxNzQ3MzY0OTU1LCJleHAiOjE3NDczNjg1NTUsIm5iZiI6MTc0NzM2NDk1NSwianRpIjoia0M1cm9GbElCY21kNlhjcyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.WOnUvyVsocrt_eg0vsWrQBaPTIpkkGuQoFVz5CNdryo",
 							"type": "string"
 						}
 					]
@@ -311,7 +315,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8787/api/task/1",
+					"raw": "http://127.0.0.1:8787/api/deleteuser/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -322,7 +326,7 @@
 					"port": "8787",
 					"path": [
 						"api",
-						"task",
+						"deleteuser",
 						"1"
 					]
 				}
