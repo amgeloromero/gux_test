@@ -3,8 +3,9 @@
 
 ## pasos proyecto laravel
 
-1- configurar .env (con datos de la base mysql)
-2- ubicarse en la carpeta bknd y en consola digitar lo siguiente para instalar los paquetes del proyecto:
+1- ubicarse en la carpeta bknd y configurar .env (con datos de la base mysql).
+
+2- en consola digitar lo siguiente para instalar los paquetes del proyecto:
 ```bash
   composer install
 ```  
@@ -13,11 +14,12 @@
 ```bash
   php artisan migrate
 ```  
-4- en consola digitar lo siguiente:  
+4- para ejecutar el proyecto:  
 ```bash
 php artisan serve --port=8787
 ```  
-
+## luego abrir la url y verificar si abre el home de laravel (se dejo como prueba):
+http://localhost:8787/
 
 ## nota
 - para ver el modo admin hay que cambiar el tipo de usuario en la bdd "admin" ya que acepta dos tipos "admin" o "user"
@@ -32,3 +34,6 @@ php artisan serve --port=8787
 npm install
 npm run dev
 ``` 
+
+## luago abrir la url:
+http://localhost:3000
